@@ -1,0 +1,111 @@
+<html>
+<head>
+
+  <link rel="stylesheet" href="formstyle.css">
+
+
+<title>Form Validation</title>
+
+<script type="text/javascript">
+function validate()
+{
+var fname=document.getElementById("name");
+var usrname=document.getElementById("username");
+var password=document.getElementById("password1");
+var repassword=document.getElementById("password2");
+var address=document.getElementById("address");
+var age=document.getElementById("age");
+var gender=document.getElementById("gender");
+
+if(fname.value==""||usrname.value==""||address.value==""|| email.value==""|| password.value=="" ||
+repassword.value==""){
+
+alert("fill all the details");
+return false;
+}
+else if(password.value!=repassword.value){
+ alert("retype the password");
+return false;
+}
+else{
+
+return true;
+
+}
+}
+</script>
+</head>
+<body>
+
+<form onsubmit="return validate()" action="http://localhost:5000/login" method="POST">
+<br>
+<center>
+<br>
+
+<table class="form1" bordercolor="#7FFFD4" cellspacing="2" cellpadding="2" width="50%" height="400px">
+<br>
+ <tr>
+    <th style="width:180px"></th>
+    <th style="width:80px"></th>
+  </tr>
+<tr>
+<center><td colspan="2"><h1>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspRegistration form</h1></td></center>
+</tr>
+<tr>
+<td style="font-size: 18pt;">&nbsp&nbsp&nbspFull name :</td>
+
+<td><input type="text" style="height: 40px; width:280px; " placeholder="full name" name="name">
+</td>
+</tr>
+<tr>
+<td style="font-size: 18pt;">&nbsp&nbsp&nbspUser name :</td>
+<td><input type="text" style="height: 40px; width:280px; " placeholder="user name" name="username">
+</td>
+</tr>
+<tr>
+<td style="font-size: 18pt;">&nbsp&nbsp&nbspPassword :</td>
+<td><input type="password" style="height: 40px; width:280px; " placeholder="Password" name="password1">
+</td>
+</tr>
+<tr>
+<td style="font-size: 18pt;">&nbsp&nbsp&nbspRe Password :</td>
+<td><input type="Password" style="height: 40px; width:280px; " placeholder="password" name="password2">
+</td>
+</tr>
+<tr>
+<td style="font-size: 18pt;">&nbsp&nbsp&nbspRoll NO :</td>
+<td><input type="textarea" style="height: 40px; width:280px; " placeholder="address" name="address">
+</td>
+</tr>
+<tr>
+<td style="font-size: 18pt;">&nbsp&nbsp&nbspE-mail-ID :</td>
+<td><input type="email" style="height: 40px; width:280px; " label="email" name="email" placeholder="email-id">
+</td>
+</tr>
+<tr>
+<td style="font-size: 18pt;">&nbsp&nbsp&nbspGender :</td>
+<td style="width: 8%"><input type="radio"  label="male" name="Gender" value="1">male
+<input type="radio" label="female" name="Gender" value="0">female
+</td>
+<td>
+</td>
+</tr>
+<tr>
+  <td style="font-size: 18pt;">Course:</td>
+  <td style=""width: 8%">
+    <select name="courses">
+        <option value="rigatoni">BE CSE</option>
+      <option value="dave">BE ECE</option>
+      <option value="pumpernickel">BE EEE</option>
+      <option value="reeses">Btech IT</option>
+    </select></td>"
+
+</tr>
+<tr><td colspan="2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<button class="button" onclick="Appdevex1.html;">Submit</button></td></tr>
+</table>
+<br><br>
+
+
+</center>
+</form>
+</body>s
