@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        function testVariable() {
+            var strText = document.getElementById("text1").value;          
+            var strText1 = document.getElementById("text2").value;
+            var strText2 = document.getElementById("text3").value;
+            var strText3 = document.getElementById("text4").value;
+            var result = 'Name: '+strText + ' Qualification: ' + strText1+ ' Age: ' + strText2+ ' Email: ' + strText3;
+            document.getElementById('spanResult').textContent = result;
+             
+        }
+    </script>
+    <style>
+          body 
+{
+  background-image: url("https://images.pexels.com/photos/1939485/pexels-photo-1939485.jpeg?auto=compress&cs=tinysrgb&w=600");
+  background-repeat: no-repeat;
+  background-size: 1600px 750px;
+ }
+    </style>
+</head>
+<body> <center>
+    Name: <input type="text" id="text1" />
+    <br><br>
+    Qualification: <input type="text" id="text2" />
+    <br><br>
+    Age: <input type="text" id="text3" />
+    <br><br>
+    Email: <input type="text" id="text4" />
+</center>
+    
+<br>
+<br>
+<br>
+    <center><button  onclick="testVariable()">Submit</button> <br />
+        <span id="spanResult">
+    
+        </span>
+       </center>
+     
+</body>
+</html>
