@@ -1,0 +1,111 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,100,700,900);
+body{
+    margin: 0px;
+    background-color: grey;
+}
+h1,
+p,
+div{
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato';
+}
+
+h1 {
+  font-size: 2.8em;
+  padding: 10px 0;
+  font-weight: 800;
+}
+
+p {
+  font-size: 1.1em;
+  font-weight: 100;
+  letter-spacing: 5px;
+}
+
+.profile{
+  width:10%;
+  height:10%;
+}
+
+.header {
+  width: 100%;
+    padding: 17px 0;
+    text-align: center;
+    background: grey;
+    color: white;
+}
+
+.headertext{
+    padding-top: 15px;
+    width: 50%;
+}
+.form{
+  border: 2px solid black;
+  height: 350px;
+  width: 429px;
+  position: absolute;
+  left: 35%;
+  top: 400px;
+  background: black;
+  color: white;
+}
+.formin{
+    padding:  40px;
+}
+.formin input,select{
+    width: 67%;
+    float: right;
+    padding: 5px;
+    border: white;
+
+}
+.formin label{
+    width: 51%;
+
+}
+.formin div{
+   padding: 10px 0px 10px 0px;
+}
+.button{
+    padding: 5px;
+    border-radius: 50px;
+    border: 2px solid white;
+    width: 114px;
+    height: 40px;
+    text-align: center;
+    margin-top: 30px;
+}
+.button:hover{
+    background-color: #9e9e9e;
+    color: white;
+}
+@media only screen and (max-width: 768px) {
+  body {
+    margin: 0px;
+    width: 122%;
+}
+  .form {
+
+    width: 429px;
+    position: revert;
+    margin: 38px;
+    margin-top: 81px;
+    height: 300px;
+  }
+  .formin{
+    padding: 40px;
+    padding-top: 83px;
+  }
+  .button{
+    padding: 18px;
+    border-radius: 46px;
+    border: 2px solid white;
+    width: 185px;
+    height: revert;
+    text-align: center;
+    margin-top: 128px;
+    font-size: larger;
+
+  }
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Document</title>
+    <script type="text/javascript">
+      function validate() {
+        var name = document.getElementById("name");
+        var gender = document.getElementById("gender");
+        var DOB = document.getElementById("DOB");
+        var Nationality = document.getElementById("Nationality");
+        var Qualification = document.getElementById("Qualification");
+        var Email = document.getElementById("Email");
+        var Password = document.getElementById("Password");
+        if (
+          name.value == "" ||
+          gender.value == "" ||
+          DOB.value == "" ||
+          Nationality.value == "" ||
+          Qualification.value == "" ||
+          Email.value == "" ||
+          Password.value == ""
+        ) {
+          alert("fill all the details");
+          return false;
+        } else {
+          return true;
+        }
+      }
+    </script>
+
+
+  </head>
+  <body>
+
+
+
+
+
+
+    <section class="header">
+      <p>Profile image</p>
+      <center>
+        <div class="headertext">
+          <img class="profile" src="image.jpg" />
+
+        </div>
+      </center>
+    </section>
+
+    <section class="header">
+      <p>About</p>
+      <center>
+        <div class="headertext">
+          I am a student from PSG college of technology pursuing final year B E in the stream of computer science engineering in Coimbatore.
+And i am interested in web development where in i have taken some courses on web development
+and understood the basics and done some projects in web development. That helped me to realize that I am capable of taking responsibilities in my hands like organising the team for effective performance while also co operating and  co-ordinating with the team while working.
+As a fresher, I don’t have any prior experience, I would put all my knowledge efforts for the good progress of the company.
+        </div>
+      </center>
+    </section>s
+
+    <form class="form" onsubmit="validate()">
+      <div class="formin">
+        <center>
+          <p>Contact Form</p>
+          <br />
+        </center>
+        <div>
+          <label>Name</label>
+          <input type="text" placeholder="full name" id="name" />
+        </div>
+        <div>
+          <label>Gender</label>
+          <div style="width: 22%; float: right; padding: 0px">
+            <input
+              style="width: 10px; margin-top: 6px"
+              type="radio"
+              label="Male"
+              name="Gender"
+            />
+            Male
+          </div>
+          <div style="width: 27%; float: right; padding: 0px">
+            <input
+              style="width: 10px; margin-top: 6px"
+              type="radio"
+              label="Female"
+              name="Gender"
+            />
+            Female
+          </div>
+        </div>
+        <div>
+          <label>Qualification</label>
+          <input type="text" placeholder="Qualification" id="Qualification" />
+        </div>
+        <div>
+          <label>Email</label>
+          <input type="email" placeholder="Email" id="Email" />
+        </div>
+        <center><button class="button" type="submit">Submit</button></center>
+      </div>
+    </form>
+  </body>
+</html>
